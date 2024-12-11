@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+body {
+  scroll-behavior: smooth;
+}
+
+/* hover effect */
+.sidebar-item {
+  @apply text-gray-300 hover:text-white rounded backdrop-blur-lg  hover:bg-gray-400;
+}

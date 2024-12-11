@@ -1,9 +1,11 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Layout from "./components/Layout";
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Contact from "./pages/Contact";
-import Profile from "./pages/Profile";
+import Layout from "./components/Layout.jsx";
+import Home from "./pages/Home.jsx";
+import About from "./pages/About.jsx";
+import Contact from "./pages/Contact.jsx";
+import Profile from "./pages/Profile.jsx";
+import Neovim from "./pages/neovim/Neovim.jsx";
+import Linux from "./pages/linux/Linux.jsx";
 
 const router = createBrowserRouter([
   {
@@ -11,8 +13,16 @@ const router = createBrowserRouter([
     element: <Layout />,
     children: [
       {
-        index: true,
+        index: true, // This indicates the default route for "/"
         element: <Home />,
+      },
+      {
+        path: "neovim",
+        element: <Neovim />,
+      },
+      {
+        path: "linux",
+        element: <Linux />,
       },
       {
         path: "about",
