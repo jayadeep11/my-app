@@ -12,8 +12,8 @@ export const sections = [
     path: '/neovim',
   },
   {
-    name: 'nothing',
-    path: '/linux',
+    name: 'TodoList',
+    path: '/todolist',
   },
   {
     name: 'Jocker',

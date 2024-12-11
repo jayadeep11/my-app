@@ -6,6 +6,7 @@ import Contact from "./pages/Contact.jsx";
 import Profile from "./pages/Profile.jsx";
 import Neovim from "./pages/neovim/Neovim.jsx";
 import Linux from "./pages/linux/Linux.jsx";
+import TodoList from "./pages/todolist/TodoList.jsx";
 
 const router = createBrowserRouter([
   {
@@ -25,8 +26,8 @@ const router = createBrowserRouter([
         element: <Linux />,
       },
       {
-        path: "about",
-        element: <About />,
+        path: "todolist",
+        element: <TodoList />,
       },
       {
         path: "contact",
