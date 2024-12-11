@@ -1,6 +1,6 @@
 import React from "react";
 import SectionLink from "./SectionLink.jsx";
-import { sections } from "./constants.js";
+import { sections } from "./constants.jsx";
 
 function Sections() {
   return (

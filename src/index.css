@@ -2,12 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-
 body {
+  font-family: 'Poppins', sans-serif;
+  font-style: regular;
   scroll-behavior: smooth;
 }
 
 /* hover effect */
 .sidebar-item {
-  @apply text-gray-300 hover:text-white rounded backdrop-blur-lg  hover:bg-gray-400;
+  @apply text-gray-300 hover:text-white rounded backdrop-blur-lg hover:bg-opacity-20  hover:bg-[#293749] transition-all duration-300;
 }
