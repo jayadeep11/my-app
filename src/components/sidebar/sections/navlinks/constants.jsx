@@ -18,6 +18,11 @@ export const sections = [
     icon: <SiNeovim />,
   },
   {
+    name: "Password Generator",
+    path: "/password-generator",
+    icon: <SiNeovim />,
+  },
+  {
     name: "To-Do List",
     path: "/todolist",
     icon: <FaListAlt />,
