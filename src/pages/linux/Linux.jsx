@@ -1,9 +1,17 @@
-import React from 'react'
+import Header from "./Header.jsx";
+import Options from "./Options.jsx";
 
-function Linux() {
+const Home = () => {
   return (
-    <div className='text-8xl text-white'>Linux</div>
-  )
-}
+    <div className="flex flex-col justify-center items-center w-full gap-10">
+      <div className="w-full">
+        <Header/>
+      </div>
+      <div className="w-full sticky">
+        <Options />
+      </div>
+    </div>
+  );
+};
 
-export default Linux
+export default Home;

@@ -4,9 +4,6 @@ import Home from "./pages/home/Home.jsx";
 import Profile from "./pages/profile/Profile.jsx";
 import Neovim from "./pages/neovim/Neovim.jsx";
 import Linux from "./pages/linux/Linux.jsx";
-import TodoList from "./pages/todolist/TodoList.jsx";
-import ConsvervationComponent from "./pages/ChatUI.jsx";
-import Passwd from "./pages/password-generator/App.jsx";
 
 const router = createBrowserRouter([
   {
@@ -22,24 +19,12 @@ const router = createBrowserRouter([
         element: <Neovim />,
       },
       {
-        path: "password-generator",
-        element: <Passwd />,
-      },
-      {
         path: "linux",
         element: <Linux />,
       },
       {
-        path: "todolist",
-        element: <TodoList />,
-      },
-      {
         path: "profile",
         element: <Profile />,
-      },
-      {
-        path: "friend",
-        element: <ConsvervationComponent />,
       },
     ],
   },

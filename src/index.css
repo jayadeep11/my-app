@@ -3,12 +3,29 @@
 @tailwind utilities;
 
 body {
-  font-family: 'Poppins', sans-serif;
-  font-style: regular;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
   scroll-behavior: smooth;
+  background-attachment: fixed;
+  height: 100%;
+  background: linear-gradient(
+    0.5turn,
+    #162432,
+    #161a1d,
+    #161a1d,
+    #161a1d,
+    #161a1d
+  );
+  background-opacity: 0;
+  background-attachment: fixed;
+  color: #e0e0e0;
+  backdrop-filter: blur(1000px); 
 }
 
-/* hover effect */
 .sidebar-item {
-  @apply text-gray-300 hover:text-white rounded backdrop-blur-lg hover:bg-opacity-20  hover:bg-[#293749] transition-all duration-300;
+  @apply rounded backdrop-blur-lg hover:bg-opacity-5 hover:bg-cyan-50 transition-all duration-300;
+}
+
+.active-item {
+  @apply rounded backdrop-blur-lg bg-opacity-70 text-white bg-[#293749] transition-all duration-300;
 }

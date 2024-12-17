@@ -1,11 +1,12 @@
 import { FaHome, FaLinux, FaListAlt, FaDocker } from "react-icons/fa";
+import { IoMdHome } from "react-icons/io";
 import { SiNeovim, SiArchlinux } from "react-icons/si";
 
 export const sections = [
   {
     name: "Home",
     path: "/",
-    icon: <FaHome />,
+    icon: <IoMdHome />,
   },
   {
     name: "Linux",
@@ -18,23 +19,23 @@ export const sections = [
     icon: <SiNeovim />,
   },
   {
-    name: "Password Generator",
-    path: "/password-generator",
-    icon: <SiNeovim />,
-  },
-  {
     name: "To-Do List",
     path: "/todolist",
     icon: <FaListAlt />,
   },
   {
     name: "Docker",
-    path: "/docker",
+    path: "/a",
     icon: <FaDocker />,
   },
   {
+    name: "Utilities",
+    path: "/password-generator",
+    icon: <SiNeovim />,
+  },
+  {
     name: "Arch Linux",
-    path: "/arch-linux",
+    path: "/a",
     icon: <SiArchlinux />,
   },
 ];

@@ -1,15 +1,14 @@
 import Header from "./Header.jsx";
-import Content from "./Content.jsx";
+import Options from "./Options.jsx";
 
 const Home = () => {
   return (
-    <div className="flex flex-col w-full gap-20">
-      {/* TODO: header.jsx */}
+    <div className="flex flex-col justify-center items-center w-full gap-10">
       <div className="w-full">
-        <Header username="Neha" />
+        <Header />
       </div>
-      <div>
-        <Content />
+      <div className="w-full sticky">
+        <Options />
       </div>
     </div>
   );

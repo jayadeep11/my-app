@@ -1,10 +1,16 @@
+import Header from "./Header.jsx";
+import Options from "./Options.jsx";
+
 const Profile = () => {
+
   return (
-    <div className="flex flex-col gap-4">
-      <h1 className="text-3xl font-bold">Profile</h1>
-      <p className="text-[#6B7280] text-lg">
-        This is a profile page. I will add more information here.
-      </p>
+    <div className="flex flex-col justify-center items-center w-full gap-10">
+      <div className="w-full">
+        <Header username="Neha" />
+      </div>
+    <div className="w-full">
+      <Options />
+    </div>
     </div>
   );
 };

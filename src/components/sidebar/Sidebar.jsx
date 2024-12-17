@@ -1,13 +1,11 @@
-import ProfileLink from "./profile/ProfileLink.jsx";
-import Friends from "./sections/friendslist/Friends.jsx";
+import ProfileLink from "./sections/profile/ProfileLink.jsx";
 import Sections from "./sections/navlinks/Sections.jsx";
 
 const Sidebar = () => {
   return (
-    <div className="flex flex-col w-full h-screen bg-transparent text-[#192128] p-3  border-r border-gray-600">
+    <div className="flex text-gray-500 flex-col gap-1 min-h-screen border-r border-slate-800 p-2">
       <ProfileLink />
       <Sections />
-      <Friends />
     </div>
   );
 };
